@@ -1,10 +1,12 @@
-# Native Federation Core Example
+# Native Federation Core React Example
 
 ![Screenshot](example.png)
 
 This example demonstrate how to use Native Federation in a framework- and tooling-agnostic way. For this, Native Federation Core -- ``@softarc/native-federation`` -- is used.
 
 > Hint: There is also an [Angular-based wrapper](https://www.npmjs.com/package/@angular-architects/native-federation).
+
+> Thanks to [Zack Jackson](https://twitter.com/ScriptedAlchemy) for helping with this example.
 
 ## Try it out
 

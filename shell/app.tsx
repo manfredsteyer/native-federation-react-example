@@ -1,15 +1,14 @@
 import React from "react";
 import { loadRemoteModule } from "@softarc/native-federation";
 
-const reactAppMod = loadRemoteModule({
-  remoteName: "mfe1",
-  exposedModule: "./component",
-});
-
 const RemoteComponent = React.lazy(() =>
-  reactAppMod.then((c) => {
-    return { default: c.App };
-  })
+    loadRemoteModule({
+        remoteName: "mfe1",
+        exposedModule: "./component",
+    })
+    .then((c) => {
+      return { default: c.App };
+    })
 );
 
 export function App() {
@@ -24,7 +23,7 @@ export function App() {
         </li>
       </ul>
 
-      <React.Suspense fallback="loading federated">
+      <React.Suspense fallback="...">
         <RemoteComponent />
       </React.Suspense>
     </div>

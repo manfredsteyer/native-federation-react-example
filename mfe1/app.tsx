@@ -11,7 +11,7 @@ export function App() {
           <input type="text" placeholder="To"></input>
       </div>
       <div>
-          <button id="search">Search</button>
+          <button id="search">Search!</button>
           <button id="terms">Terms...</button>
       </div>
     </div>

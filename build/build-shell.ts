@@ -1,2 +1,4 @@
 import { buildProject } from "./build-common";
-buildProject('shell');
+
+const watch = process.argv.includes('--watch');
+buildProject('shell', watch);

@@ -18,6 +18,16 @@ npm start
 
 > This simple example does not implement a watch-mode for development.
 
+## Watch Mode
+
+Run the ``watch`` script instead of ``build``:
+
+```
+npm i
+npm run watch
+npm start
+```
+
 ## Inspect the Example
 
 - Have a look at the project structure: It contains a shell (host), a micro frontend mfe1 (remote), and a shared lib used for exchanging data between the shell and the shell and mfe1.

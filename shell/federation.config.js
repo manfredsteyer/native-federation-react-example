@@ -18,3 +18,11 @@ module.exports = withNativeFederation({
   },
 
 });
+
+
+console.log(shareAll({
+  singleton: true,
+  strictVersion: true,
+  requiredVersion: "auto",
+  includeSecondaries: true,
+}));

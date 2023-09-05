@@ -4,7 +4,7 @@ import * as fs from 'fs';
 import { createEsBuildAdapter } from '@softarc/native-federation-esbuild';
 import { federationBuilder } from '@softarc/native-federation/build';
 
-export async function buildProject(projectName, watch) {
+export async function buildProject(projectName) {
 
     const tsConfig = 'tsconfig.json';
     const outputPath = `dist/${projectName}`;
@@ -19,7 +19,6 @@ export async function buildProject(projectName, watch) {
             tsConfig,
             federationConfig: `${projectName}/federation.config.js`,
             verbose: false,
-            watch,
         },
 
         /*
@@ -53,7 +52,6 @@ export async function buildProject(projectName, watch) {
         resolveExtensions: ['.ts', '.tsx', '.mjs', '.js'],
         tsconfig: tsConfig,
         splitting: true,
-        watch
     });
 
     fs.copyFileSync(`${projectName}/index.html`, `dist/${projectName}/index.html`);

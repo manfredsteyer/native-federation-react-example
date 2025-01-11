@@ -1,0 +1,11 @@
+# Repo
+https://github.com/manfredsteyer/native-federation-react-example.git
+
+# Branch
+mf-esbuild-experiment
+
+# Try out
+```bash
+npm i
+npm run build:remote
+```
